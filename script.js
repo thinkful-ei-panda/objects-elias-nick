@@ -8,4 +8,17 @@ let loaf = {
   }
 };
 
-console.log(loaf.hydration());
+
+let object = {
+  meals: [
+    'breakfast',
+    'second breakfast',
+    'elevenses',
+    'lunch',
+    'afternoon tea',
+    'dinner',
+    'supper'
+  ]
+};
+
+console.log(object.meals[3]);
