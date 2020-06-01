@@ -8,17 +8,18 @@ let loaf = {
   }
 };
 
+function People(name,jobTitle) {
+  this.name = name;
+  this.jobTitle = jobTitle;
+}
 
-let object = {
-  meals: [
-    'breakfast',
-    'second breakfast',
-    'elevenses',
-    'lunch',
-    'afternoon tea',
-    'dinner',
-    'supper'
-  ]
-};
+let people = [
+  new People('martin','First-Man'),
+  new People('marty','CEO'),
+  new People('jerry','Accountant')
+];
 
-console.log(object.meals[3]);
+for (let i=0; i<3;i++){
+  console.log(people[i].name +' '+ people[i].jobTitle);
+}
+
