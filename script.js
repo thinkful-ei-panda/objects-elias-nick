@@ -8,4 +8,15 @@ let loaf = {
   }
 };
 
+let ojct = {
+  foo: 'string',
+  bar: 8,
+  fum: {one:1, two:4},
+  quux: [4,'loop',8],
+  spam: 'callers'
+};
+
+for (let key in ojct) {
+  console.log(key +' '+ ojct[key]);
+}
 console.log(loaf.hydration());
