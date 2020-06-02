@@ -58,6 +58,10 @@ const characters = [
 
 characters.push(new createCharacter('Arwen Undomiel', 'arwen', 'Half-Elf', 'Rivendell', 7, 7, 115, ['Hadhafang', 'Nîn o Chithaeglir', 'Other Spells']));
 
+//Find aragorn in the character array
+const findAragorn = characters.find(character => character.nickname === 'aragorn');
+console.log(findAragorn.describe());
+
 //This way of unning filter is the same as the line below
 /*const hobbits = characters.filter(function (character) {
   return character.race === 'Hobbit';
